@@ -1,0 +1,23 @@
+<ion-header>
+
+  <ion-title>
+    Books
+  </ion-title>
+
+
+</ion-header>
+
+<ion-content padding>
+  <h2>BooksList</h2>
+  <ion-list>
+
+    <ion-item nopadding *ngFor="let books of Bookss; let i=index">
+      <p (click)="openbookdetails(books)">
+        <span>{{books.name}}</span><br> Type: {{books.type}}<br> {{books.publisheddate}}
+      </p>
+
+    </ion-item>
+
+
+  </ion-list>
+</ion-content>
